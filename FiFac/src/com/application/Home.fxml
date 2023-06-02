@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="Main_App_Main_BorderPan" prefHeight="381.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.HomeController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar fx:id="Main_App_Main_MenuBar">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Fichier">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Listes">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Liste Clients" />
+                        <MenuItem mnemonicParsing="false" text="Liste Fournisseurs" />
+                        <MenuItem mnemonicParsing="false" text="Liste Familles article" />
+                        <MenuItem mnemonicParsing="false" text="Liste Article" />
+                        <MenuItem mnemonicParsing="false" text="Liste Documents" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Rapport">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Réglements" />
+                        <MenuItem mnemonicParsing="false" text="Echéance" />
+                        <MenuItem mnemonicParsing="false" text="Alerte Stock" />
+                        <MenuItem mnemonicParsing="false" text="Statistiques" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Option">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Outils">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Aide">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Activer" />
+                        <MenuItem mnemonicParsing="false" text="About" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <HBox alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <Button fx:id="Main_App_Main_shortcut_btn_Home" mnemonicParsing="false">
+                           <graphic>
+                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../icons/desktop.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <Label fx:id="Main_App_Main_shortcut_Btn_Home_lab" text="Accueille" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" top="15.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0">
+                     <children>
+                        <Button fx:id="Main_App_Main_shortcut_Btn_Client" mnemonicParsing="false" onMouseClicked="#GOFORIT">
+                           <graphic>
+                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../icons/Client.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <Label fx:id="Main_App_Main_shortcut_Btn_Client_lab" text="Clients" />
+                     </children>
+                     <HBox.margin>
+                        <Insets right="10.0" top="15.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="110.0" layoutY="10.0">
+                     <children>
+                        <Button fx:id="Main_App_Main_shortcut_Btn_Shop" mnemonicParsing="false">
+                           <graphic>
+                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../icons/cashiermachine.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <Label fx:id="Main_App_Main_shortcut_Btn_Shop_lab" text="Point De Vente" />
+                     </children>
+                     <HBox.margin>
+                        <Insets right="10.0" top="15.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="210.0" layoutY="10.0">
+                     <children>
+                        <Button fx:id="Main_App_Main_shortcut_Btn_Supplier" mnemonicParsing="false">
+                           <graphic>
+                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../icons/suppliers.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <Label fx:id="Main_App_Main_shortcut_Btn_Supplier_lab" text="Fournisseurs" />
+                     </children>
+                     <HBox.margin>
+                        <Insets right="10.0" top="15.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="310.0" layoutY="10.0">
+                     <children>
+                        <Button fx:id="Main_App_Main_shortcut_Btn_Product" mnemonicParsing="false">
+                           <graphic>
+                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../icons/Product.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <Label fx:id="Main_App_Main_shortcut_Btn_Product_lab" text="Articles" />
+                     </children>
+                     <HBox.margin>
+                        <Insets right="10.0" top="15.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="410.0" layoutY="10.0">
+                     <children>
+                        <Button mnemonicParsing="false">
+                           <graphic>
+                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../icons/Supply1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <Label text="Stock" />
+                     </children>
+                     <HBox.margin>
+                        <Insets right="10.0" top="15.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="510.0" layoutY="10.0">
+                     <children>
+                        <Button mnemonicParsing="false">
+                           <graphic>
+                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../icons/Bills.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <Label text="facture" />
+                     </children>
+                     <HBox.margin>
+                        <Insets right="10.0" top="15.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox layoutX="610.0" layoutY="10.0">
+                     <HBox.margin>
+                        <Insets right="10.0" top="15.0" />
+                     </HBox.margin></VBox>
+                  <VBox layoutX="810.0" layoutY="10.0">
+                     <HBox.margin>
+                        <Insets right="10.0" top="15.0" />
+                     </HBox.margin></VBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>
